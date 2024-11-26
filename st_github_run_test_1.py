@@ -11,9 +11,6 @@ import streamlit as st
 import subprocess
 import os
 
-if not os.path.exists('st_py_run_test_1'):
-    subprocess.run(['git', 'clone', 'https://github.com/shintarotakasaki/st_py_run_test_1.git'])
-
 # Streamlitアプリを実行
 os.system('streamlit run st_py_run_test_1/st_run.py')
 
