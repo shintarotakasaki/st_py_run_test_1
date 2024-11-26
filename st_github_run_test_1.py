@@ -25,4 +25,5 @@ def main():
     st.write(resurut1)
 
 if __name__ == "__main__":
+    import streamlit as st
     main()
