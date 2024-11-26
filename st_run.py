@@ -8,7 +8,6 @@ Original file is located at
 """
 
 import streamlit as st
-if st.button('ボタン'):
-    st.success('実行完了！')
+st.success('実行完了！')
 if __name__ == "__main__":
     main()
