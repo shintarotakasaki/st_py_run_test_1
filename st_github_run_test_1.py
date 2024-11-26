@@ -20,7 +20,7 @@ import st_run
 
 def main():
     import streamlit as st
-    st.title("Streamlit App")
+    st.title("Streamlitでレポジトリ内のpyを実行")
     import st_run
     
 if __name__ == "__main__":
