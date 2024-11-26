@@ -8,4 +8,4 @@ Original file is located at
 """
 
 import streamlit as st
-st.success('実行')
+st.success('実行完了！')
