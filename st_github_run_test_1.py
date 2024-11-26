@@ -12,7 +12,7 @@ import subprocess
 import os
 import sys
 
-if not os.path.exests('st_py_run_test_1'):
+if not os.path.exeists('st_py_run_test_1'):
     subprocess.run(['git','clone','https://github.com/shintarotakasaki/st_py_run_test_1.git'])
 
 sys.path.append('st_py_run_test_1')
