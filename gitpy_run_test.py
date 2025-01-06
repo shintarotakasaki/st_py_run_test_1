@@ -30,10 +30,13 @@ if after_xl is not None:
         wb = load_workbook(filename=file)
         sheet = wb.active
         import xl_des
+        importlib.reload(xl_des)
         st.write(f"Sheet title: {sheet.title}")
 
     elif file_mime=='application/pdf':
+        st.write("PDFをアップロードしました")
         import pdf_des
+        importlib.reload(pdf_des)
 
     else:
         st.write("エクセルファイル(.xlsx)をアップロードしてください")
