@@ -18,10 +18,9 @@ if not os.path.exists('st_py_run_test_1'):
 
 sys.path.append('st_py_run_test_1')
 
-def main():
-    import streamlit as st
-    st.title("Streamlitでレポジトリ内のpyを実行")
-    after_xl = st.file_uploader("ファイルををアップロードしてください")
+import streamlit as st
+st.title("Streamlitでレポジトリ内のpyを実行")
+after_xl = st.file_uploader("ファイルををアップロードしてください")
 
     if after_xl is not None:
         file_mime = after_xl.type
