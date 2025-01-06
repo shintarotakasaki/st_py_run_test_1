@@ -22,6 +22,7 @@ sys.path.append('st_py_run_test_1')
 import pdf_des
 import xl_des
 
+st.title("Streamlitでレポジトリ内のpyを実行")
 after_xl = st.file_uploader("ファイルををアップロードしてください")
 
 if after_xl is not None:
