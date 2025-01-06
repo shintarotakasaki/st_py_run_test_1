@@ -19,7 +19,8 @@ if not os.path.exists('st_py_run_test_1'):
 
 sys.path.append('pdf_des')
 sys.path.append('xl.des')
-
+import pdf_des
+import xl_des
 
 after_xl = st.file_uploader("ファイルををアップロードしてください")
 
