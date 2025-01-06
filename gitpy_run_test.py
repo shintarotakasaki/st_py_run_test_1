@@ -8,7 +8,6 @@ Original file is located at
 """
 
 from openpyxl import load_workbook
-import streamlit as st
 from io import BytesIO
 import subprocess
 import os
@@ -18,9 +17,6 @@ if not os.path.exists('st_py_run_test_1'):
     subprocess.run(['git','clone','https://github.com/shintarotakasaki/st_py_run_test_1.git'])
 
 sys.path.append('st_py_run_test_1')
-
-import pdf_des
-import xl_des
 
 def main():
     import streamlit as st
