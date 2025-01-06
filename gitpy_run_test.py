@@ -17,6 +17,8 @@ if not os.path.exists('st_py_run_test_1'):
     subprocess.run(['git','clone','https://github.com/shintarotakasaki/st_py_run_test_1.git'])
 
 sys.path.append('st_py_run_test_1')
+import xl.des
+
 
 import streamlit as st
 st.title("Streamlitでレポジトリ内のpyを実行")
@@ -29,11 +31,11 @@ if after_xl is not None:
         file = BytesIO(after_xl.getvalue())
         wb = load_workbook(filename=file)
         sheet = wb.active
-        import xl.des
+        import xl_des
         st.write(f"Sheet title: {sheet.title}")
 
     elif file_mime=='application/pdf':
-        import pdf.des
+        import pdf_des
 
     else:
         st.write("エクセルファイル(.xlsx)をアップロードしてください")
