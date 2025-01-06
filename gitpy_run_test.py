@@ -30,13 +30,13 @@ if after_xl is not None:
         wb = load_workbook(filename=file)
         sheet = wb.active
         import xl_des
-        xl_des = importlib.import_module('xl_des')
+        xl_des = importlib('xl_des')
         st.write(f"Sheet title: {sheet.title}")
 
     elif file_mime=='application/pdf':
         st.write("PDFをアップロードしました")
         import pdf_des
-        pdf_des = importlib.import_module('pdf_des')
+        pdf_des = importlib('pdf_des')
 
     else:
         st.write("エクセルファイル(.xlsx)をアップロードしてください")
