@@ -8,6 +8,6 @@ Original file is located at
 """
 
 import streamlit as st
-st.success('実行完了！')
+st.success('これはエクセルです')
 if __name__ == "__main__":
     main()
