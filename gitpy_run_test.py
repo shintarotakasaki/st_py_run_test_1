@@ -33,7 +33,7 @@ if after_xl is not None:
           import xl.des
           st.write(f"Sheet title: {sheet.title}")
 
-      elif file_mine=='application/pdf'
+      elif file_mine=='application/pdf':
           import pdf.des
 
       else:
