@@ -17,8 +17,8 @@ import sys
 if not os.path.exists('st_py_run_test_1'):
     subprocess.run(['git','clone','https://github.com/shintarotakasaki/st_py_run_test_1.git'])
 
-sys.path.append('pdf_des')
-sys.path.append('xl.des')
+sys.path.append('st_py_run_test_1')
+
 import pdf_des
 import xl_des
 
