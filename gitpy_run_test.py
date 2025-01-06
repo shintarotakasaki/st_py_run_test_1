@@ -22,19 +22,19 @@ import streamlit as st
 st.title("Streamlitでレポジトリ内のpyを実行")
 after_xl = st.file_uploader("ファイルををアップロードしてください")
 
-    if after_xl is not None:
-        file_mime = after_xl.type
+if after_xl is not None:
+    file_mime = after_xl.type
 
-        if file_mime == 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet':
-            file = BytesIO(after_xl.getvalue())
-            wb = load_workbook(filename=file)
-            sheet = wb.active
-            import xl.des
-            st.write(f"Sheet title: {sheet.title}")
+    if file_mime == 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet':
+        file = BytesIO(after_xl.getvalue())
+        wb = load_workbook(filename=file)
+        sheet = wb.active
+        import xl.des
+        st.write(f"Sheet title: {sheet.title}")
 
-        elif file_mime=='application/pdf':
-            import pdf.des
+    elif file_mime=='application/pdf':
+        import pdf.des
 
-        else:
-            st.write("エクセルファイル(.xlsx)をアップロードしてください")
-            st.stop()
+    else:
+        st.write("エクセルファイル(.xlsx)をアップロードしてください")
+        st.stop()
