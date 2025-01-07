@@ -10,7 +10,5 @@ import streamlit as st
 
 def main(sheet):
     st.success('これはexcelです')
-    
+    st.write(f"シート名: {sheet.title}")
     # ここにexcelを処理するコードを追加してください
-
-if __name__ == "__main__":
