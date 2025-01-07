@@ -9,7 +9,18 @@ Original file is located at
 
 import streamlit as st
 
-st.success('これはpdfです')
+def main(uploaded_file):
+    st.success('これはPDFです')
+    # ここにPDFを処理するコードを追加してください
+    # 例:
+    # from PyPDF2 import PdfReader
+    # reader = PdfReader(uploaded_file)
+    # number_of_pages = len(reader.pages)
+    # st.write(f"PDFのページ数: {number_of_pages}")
+    # for page_number in range(number_of_pages):
+    #     page = reader.pages[page_number]
+    #     text = page.extract_text()
+    #     st.write(f"--- ページ {page_number + 1} ---")
+    #     st.write(text)
 
 if __name__ == "__main__":
-    main()
