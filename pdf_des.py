@@ -22,5 +22,3 @@ def main(uploaded_file):
     #     text = page.extract_text()
     #     st.write(f"--- ページ {page_number + 1} ---")
     #     st.write(text)
-
-if __name__ == "__main__":
