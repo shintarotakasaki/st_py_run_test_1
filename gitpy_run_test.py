@@ -20,7 +20,7 @@ import streamlit as st
 REPO_NAME = 'st_py_run_test_1'
 REPO_URL = 'https://github.com/shintarotakasaki/st_py_run_test_1.git'
 
-if not os.path.exists(REPO_NAME):
+if not os.path.exists(REPO_URL):
     subprocess.run(['git', 'clone', REPO_URL])
 
 # モジュールパスを追加
